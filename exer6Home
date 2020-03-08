@@ -1,0 +1,18 @@
+def conta_ocorrencias(p,t):
+  tamanhoP = len(p)
+  tamanhoT = len(t)
+  verifica = 0
+  confirma = 0
+  for i in range(0, tamanhoT):
+    cont = i
+    if(p[cont] == t[cont]):
+      verifica += 1
+    if(verifica == tamanhoT):  
+      confirma += 1
+      i -= 1
+  
+t = input()
+p = input()
+
+
+print(conta_ocorrencias(p, t))
